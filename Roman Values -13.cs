@@ -65,34 +65,25 @@ public class Solution {
     private int GetLastVisited(char str,char curr){
         switch (str){
             case 'C':
-                if(curr=='M'){
-                    return 200;
-                }
-                if(curr=='D'){
+                if(curr=='M' || curr=='D'){
                     return 200;
                 }
                 break;
             case 'I':
-                 if(curr=='V'){
+                 if(curr=='V' || curr=='X'){
                     return 2;
                  }
-                 if(curr=='X'){
-                    return 2;
-                 }
+           
                  break;
             case 'X':
-                 if(curr=='L'){
+                 if(curr=='L' || curr=='C'){
                     return 20;
                  }
-                 if(curr=='C'){
-                    return 20;
-                 }
-                 
+       
                  break;
-        
-
 
         }
         return 0;
     }
+
 }
