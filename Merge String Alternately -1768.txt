@@ -1,0 +1,17 @@
+public class Solution {
+    public string MergeAlternately(string word1, string word2) {
+        int n=word1.Length;
+        int m=word2.Length;
+        string output="";
+        int i=0;
+        while(i<n || i<m){
+            if(i<n) output=output+word1[i];
+            if(i<m) output=output+word2[i];
+            i++;
+        }
+
+        return output;
+
+
+    }
+}
